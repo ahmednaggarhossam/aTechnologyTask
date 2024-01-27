@@ -1,0 +1,38 @@
+{
+    "dir": "ltr",
+    "header":
+    {
+        "TicketNo": "Ticket Number #2342",
+        "Edit": "Edit"
+    },
+    "deleteIcon":{
+        "delete": "Delete"
+    },
+    "ticket":{
+        "ticketHead": "View the movie ticket",
+        "ticketExpire": "Effective until July 15, 2023",
+        "ticketDiscount": "Discount",
+        "ticketShare": "Share"
+    },
+    "chart":{
+        "Statistics": "Coupon usage statistics",
+        "Date": "July 5, 2023 - August 5, 2023",
+        "PlaceHolder": "Choose a calendar"
+    },
+    "Table":{
+        "before":{
+            "sales": "Ticket Sales",
+            "activate": "Activate",
+            "reserve": "Reserve New Ticket"
+        },
+        "tableHead": {
+            "user": "User",
+            "ticketNo": "Ticket Number",
+            "price": "Ticket Price",
+            "cinemaLocation": "Cinemas",
+            "peopleNo": "People Number",
+            "purchaseNo": "Purchase Number",
+            "ticket": "Ticket"
+        }
+    }
+}

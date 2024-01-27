@@ -1,0 +1,31 @@
+<div class="chart-container">
+    <div class="chart-head">
+        <div class="right-side">
+            <h4 class="">{{'chart.Statistics' | translate}}</h4>
+            <div class="date">
+                <div class="">
+                    <p>{{'chart.Date' | translate}}</p>
+                </div>
+                <div class="vector">
+                    <img src="assets/Vector.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+        <div class="left-side">
+            <div class="card flex justify-content-center">
+                <p-dropdown [options]="chartTimeOption" styleClass="custom-dropdown" [(ngModel)]="selectedTime" optionLabel="name" [showClear]="false" placeholder="أختر تقويم"></p-dropdown>
+            </div>
+        </div>
+    </div>
+    <div class="chart-graph">
+        <apx-chart
+        [series]="chartOptions.series!"
+        [chart]="chartOptions.chart!"
+        [xaxis]="chartOptions.xaxis!"
+        [yaxis]="chartOptions.yaxis!"
+        [fill]="chartOptions.fill!"
+        [dataLabels]="chartOptions.dataLabels!"
+        [stroke]="chartOptions.stroke!"
+    ></apx-chart>
+    </div>
+</div>

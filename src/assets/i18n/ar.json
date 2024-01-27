@@ -1,0 +1,39 @@
+{
+    "dir": "rtl",
+    "header":
+    {
+        "TicketNo": "تذكرة رقم #2342",
+        "Edit": "تعديل"
+    },
+    "deleteIcon":{
+        "delete": "حذف"
+    },
+    "ticket":{
+        "ticketHead": "عرض التذكرة الخاصة بالفيلم",
+        "ticketExpire": "فعال حتي 15 يوليو 2023",
+        "ticketDiscount": "خصم",
+        "ticketShare": "مشاركة"
+    },
+    "chart":{
+        "Statistics": "إحصائيات إستخدام القسيمة",
+        "Date": "05 يوليو , 2023 - 05 أغسطس , 2023",
+        "PlaceHolder": "أختر تقويم"
+    },
+    "Table":{
+        "before":{
+            "sales": "مبيعات التذاكر",
+            "activate": "مفعلة",
+            "reserve": "حجز تذكرة جديدة"
+        }
+        ,
+        "tableHead": {
+            "user": "المستخدم",
+            "ticketNo": "رقم التذكرة",
+            "price": "قيمة التذكرة",
+            "cinemaLocation": "السينمات",
+            "peopleNo": "عدد الأشخاص",
+            "purchaseNo": "عدد مرات الشراء",
+            "ticket": "التذكرة"
+        }
+    }
+}

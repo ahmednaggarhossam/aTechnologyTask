@@ -1,0 +1,41 @@
+.chart-container{
+    padding: 4px 12px;
+}
+.chart-head{
+    display: flex;
+    justify-content: space-between;
+}
+.chart-head .right-side .date{
+    display: flex;
+    align-items: center;
+}
+.chart-head .right-side .vector{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 6px;
+    cursor: pointer;
+}
+.chart-head .right-side h4{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.chart-head .right-side p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #99A1B7;
+    margin-top: 0px;
+}
+.chart-head .left-side{
+    display: flex;
+    align-items: center;
+}
+
+.chart-container .chart-graph{
+    margin-top: 2px;
+}
+.mp-0{
+    padding: 0;
+    margin: 0;
+}

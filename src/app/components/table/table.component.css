@@ -1,0 +1,212 @@
+.table-container{
+    margin-top: 12px;
+    /* background-color: #09c; */
+}
+.table-container .table-container-head{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.table-container .table-container-head .right-side {
+    display: flex;
+    align-items: center;
+}
+.table-container .table-container-head .right-side .icon{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.75px solid #92A1AD66;
+    border-radius: 7.5px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.table-container .table-container-head .right-side .icon:hover{
+    background: #c5cdd366;
+    border: 0.75px solid #92A1AD66;
+}
+.table-container .table-container-head .left-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.table-container .table-container-head .left-side .toggle{
+    display: flex;
+    align-items: center;
+}
+.toggle-parent{
+    display: flex;
+    align-items: center;
+}
+.toggle-text{
+    margin-left: 7px;
+    margin-right: 7px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #9c9d9f;
+}
+.table-container .table-container-head .left-side .button{
+    display: flex;
+    align-items: center;
+}
+.btn-task{
+    background-color: #8A74F9;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 7px;
+}
+.btn-task:hover{
+    background-color: #b8a9ff;
+
+}
+
+.table-container .table-view{
+    height: 319px;
+}
+
+
+.table-container .table-view .inner .overlay{
+    position: relative;
+    overflow: hidden;
+}
+.table-container .table-view .inner .overlay .overlay-sub{
+    position: absolute;
+
+    color: #fff;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11.6px;
+}
+tr th{
+    text-align: center;
+    font-size: 13px;
+    color:#ABAAB1;
+}
+.card{
+    width: 100%;
+}
+tr td{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Neo Sans Arabic', sans-serif;
+}
+.cust-name{
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+.cust-phone{
+    font-size: 9.9px;
+    color: #92A1AD;
+    font-weight: 400;
+}
+.ticketInfo{
+    display: flex;
+}
+.ticketInfo img{
+    cursor: pointer;
+}
+.ticketInfo img:hover{
+color: #8A74F9;
+}
+.ticketData{
+    margin-left: 8px;
+    margin-right: 8px;
+    align-items: center;
+}
+.ticketDetails{
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    color: gray;
+}
+.t-0{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+.t-0:hover{
+    color: red;
+}
+.cinema{
+    cursor: pointer;
+}
+
+/* Media Query for Mobile View Mobile (300px - 767px): */
+@media only screen and (max-width: 767px) {
+    .table-container .table-container-head{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .table-container .table-container-head .left-side{
+        margin-top: 5px;
+        width: 75%;
+        display: flex;
+        justify-content: start;
+        height: 100px;
+    }
+    .toggle-parent{
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+    }
+    .card{
+        width: 330px;
+    }
+    .table-container .table-container-head .right-side {
+        flex-direction: row;
+        width: 90%;
+        justify-content: center;
+        margin: auto;
+    }
+    .table-container .table-container-head .left-side {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        justify-content: center;
+        margin: auto;
+    }
+}
+/* Media Query for Mobile View  Tablet (768px - 1023px): */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .table-container .table-container-head{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .table-container .table-container-head .right-side{
+        width: 70%;
+    }
+    .table-container .table-container-head .left-side{
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width: 2000px) {
+    .table-container .table-container-head{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .table-container .table-container-head .right-side {
+        display: flex;
+        align-items: center;
+    }
+}
