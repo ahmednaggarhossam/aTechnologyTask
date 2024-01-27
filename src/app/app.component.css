@@ -254,6 +254,15 @@ hr{
     align-items: center;
     flex-direction: row-reverse;
 }
+.translate{
+    padding: 0px 20px;
+}
+.translate select{
+    width: 120px;
+    height: 23px;
+    border-radius: 4.5px;
+    text-align: center;
+}
 /* Media Query for Mobile View Mobile (300px - 767px): */
 @media only screen and (max-width: 767px) {
     .chart-card{

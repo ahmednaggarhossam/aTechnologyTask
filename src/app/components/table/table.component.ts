@@ -7,8 +7,12 @@ import { Customer } from './../../customer';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent {
+
   value:string | undefined;
+//   this variable is for primeng switch
   checked:boolean = false;
+//   Data of the customer which in real project will get from Backend as API's Shape
+//   these Data implement an Interface Customer
   customers:Customer[] =[
     {
         id: 1,

@@ -1,5 +1,7 @@
 <div class="table-container">
+    <!-- Start Head Before Table -->
     <div class="table-container-head">
+        <!-- Start Right side div Head -->
         <div class="right-side">
             <div class="me-2">
                 {{'Table.before.sales' | translate}}
@@ -19,6 +21,10 @@
                 </div>
             </div>
         </div>
+        <!-- End Right side div Head -->
+
+
+        <!-- Start Left side div Head -->
         <div class="left-side">
             <div class="toggle-parent">
                 <div class="toggle">
@@ -37,11 +43,13 @@
                 <button class="btn btn-task">{{'Table.before.reserve' | translate}}</button>
             </div>
         </div>
+        <!-- End Left side div Head -->
     </div>
 
 
     <div class="table-view">
         <div class="inner">
+            <!-- Start Table Primeng -->
             <div class="card">
                 <p-table class="m-auto"
                 [value]="customers" 
@@ -123,6 +131,8 @@
                     
                 </p-table>
             </div>
+            <!-- End Table Primeng -->
+
         </div>
     </div>
 

@@ -32,6 +32,7 @@ export type ChartOptions = {
   styleUrls: ['./chart-design.component.css']
 })
 export class ChartDesignComponent {
+  // p-dropdown in chart section
   chartTimeOption: SerachChartOption[] | undefined;
   selectedTime: SerachChartOption | undefined;
   xAxisColor:string = '#9291A5'
@@ -42,6 +43,7 @@ export class ChartDesignComponent {
       {id:3, name:"يومياَ"}
     ]
   }
+  // chart with type area
   @ViewChild("chart") chart!: ChartComponent;
   public chartOptions: Partial<ChartOptions>;
   constructor() {

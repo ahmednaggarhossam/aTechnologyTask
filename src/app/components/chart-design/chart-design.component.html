@@ -1,4 +1,5 @@
 <div class="chart-container">
+    <!-- Start head of chart component -->
     <div class="chart-head">
         <div class="right-side">
             <h4 class="">{{'chart.Statistics' | translate}}</h4>
@@ -17,6 +18,9 @@
             </div>
         </div>
     </div>
+    <!-- End head of chart component -->
+
+    <!-- Start chart component -->
     <div class="chart-graph">
         <apx-chart
         [series]="chartOptions.series!"
@@ -27,5 +31,8 @@
         [dataLabels]="chartOptions.dataLabels!"
         [stroke]="chartOptions.stroke!"
     ></apx-chart>
+    
     </div>
+    <!-- End chart component -->
+
 </div>

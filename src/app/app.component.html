@@ -1,18 +1,28 @@
+<!-- Translate Section is Select option to translate the website -->
 <div class="translate">
-  <select name="" id="" (change)="translate($event)">
+  <select name="" id="" (change)="translate($event)" >
     <option value="ar" selected>Arabic</option>
     <option value="en">English</option>
   </select>
 </div>
+<!-- end of Translate section -->
+
+
 <div class="task" #direction [dir]="'dir' | translate">
   <div class="container">
     <div class="ticket-no">
+      <!-- Start of the head of the whole Page -->
+      <!-- start of right-side of the header -->
       <div class="right-side">
         <div class="arrow">
           <img src="../assets/Ticketno-arrow-right.png" alt="" srcset="">
         </div>
         <h4>{{'header.TicketNo' | translate}}</h4>
       </div>
+      <!-- End of right-side of the header -->
+
+      <!-- start of left-side of the header -->
+
       <div class="left-side">
         <div class="button">
           <div class="button-icon">
@@ -22,22 +32,33 @@
             {{'header.Edit' | translate}}          </div>
         </div>
       </div>
-    </div>
+      <!-- End of left-side of the header -->
 
+    </div>
+    <!-- End of the Head of the whole Page -->
+
+    <!-- Start of the section which containe the Card and the chart -->
     <div class="chart-card">
+      <!--start of div contain the chart's component -->
       <div class="chart">
         <app-chart-design></app-chart-design>
       </div>
+      <!--End of div contain the chart's component -->
+
+      <!-- Start of the card -->
       <div class="ticketContainer">
         <div class="ticket">
+          <!-- delete-icon -->
           <div class="trash-div">
             <img [pTooltip]="'deleteIcon.delete' | translate"  tooltipPosition="bottom" src="../assets/trash.png" alt="" srcset="">
           </div>
+
           <div class="ticketTitle">{{'ticket.ticketHead' | translate}}</div>
           <div class="ticket-copy">
             <div id="textToCopy" class="ticketCopyText">
               www.tazkty.com/473847
             </div>
+            <!-- this part is for coping text next to the icon when click on the icon copy -->
             <div class="ticketCopyImg">
               <img (click)="copyText()" id="copyIcon" src="../assets/copyText.png" alt="">
             </div>
@@ -68,6 +89,7 @@
               </div>
               </div>
             </div>
+            <!-- the QR code in the ticket -->
             <div class="QR">
               <qrcode 
               [qrdata]="'Hello World'"
@@ -79,8 +101,10 @@
           </div>
         </div>
       </div>
-    </div>
+      <!-- End of the card -->
 
+    </div>
+    <!-- contain table component -->
     <app-table></app-table>
   </div>
 </div>

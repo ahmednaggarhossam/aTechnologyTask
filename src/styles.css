@@ -12,9 +12,9 @@
     font-family: 'Neo Sans Arabic', sans-serif;
 }
 .translate{
-    position: absolute;
-    top: 0;
-    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 body{
     background-color: #f3f5f7;
